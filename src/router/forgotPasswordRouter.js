@@ -31,7 +31,7 @@ router.post("/forgot-password", async (req, res) => {
       from: "AICS <20-07090@g.batstate-u.edu.ph>",
       to: email,
       subject: "Reset password",
-      text: `http://localhost:5173/forgot-password?token=${token}`,
+      text: `https://aics.onrender.com/forgot-password?token=${token}`,
     };
 
     transporter.sendMail(mailOptions, (error, info) => {
